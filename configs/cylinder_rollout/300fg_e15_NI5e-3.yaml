@@ -1,0 +1,19 @@
+# data
+timestep_end: 300
+timestep_len: 1
+
+# model and training
+h_dim: 128
+z_dim: 128
+n_gnn_blocks: 15
+lr: 1.e-4
+noise: 5.e-3
+
+n_total_steps: 1500000
+n_train_steps: 1500000
+lr_decay_start: 500000
+lr_decay_len: 1000000
+lr_decay_extent: 0.1
+
+save_interval: 250000
+print_interval: 5000

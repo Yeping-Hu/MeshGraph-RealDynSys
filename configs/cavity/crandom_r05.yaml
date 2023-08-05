@@ -1,0 +1,20 @@
+# data
+partial_data: True
+cavity_depth_threshold: 2
+
+# model and training
+h_dim: 128
+z_dim: 4
+n_gnn_blocks: 15
+lr: 1.e-4
+
+n_train_steps: 150000
+lr_decay_start: 50000
+lr_decay_len: 100000
+lr_decay_extent: 0.01
+save_interval: 5000
+print_interval: 1000
+
+selector: RatioCornerRandomSelector
+select_ratio: 0.5
+reverser: TINReverser

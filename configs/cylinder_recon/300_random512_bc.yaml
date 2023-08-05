@@ -1,0 +1,24 @@
+# data
+timestep_end: 300
+timestep_len: 1
+z_rollout_dir: ./saved_model/cylinder_sg/300_r512z4_dnet
+
+# model and training
+dynamic_subgraph: False
+h_dim: 128
+z_dim: 4
+n_gnn_blocks: 15
+lr: 1.e-4
+noise: null
+
+n_total_steps: 600000
+n_train_steps: 600000
+lr_decay_start: 200000
+lr_decay_len: 400000
+lr_decay_extent: 0.1
+save_interval: 100000
+print_interval: 2000
+
+selector: NSamplesCornerRandomSelector
+n_samples: 512
+reverser: TINReverser

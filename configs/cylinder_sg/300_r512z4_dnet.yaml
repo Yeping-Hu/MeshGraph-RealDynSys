@@ -1,0 +1,26 @@
+dynamic_subgraph: False
+lr: 1.e-4
+noise: null
+
+z_dim: 4
+h_dim: 128
+n_gnn_blocks: 8
+
+n_train_steps: 3000000
+lr_decay_start: 1000000
+lr_decay_len: 1000000
+lr_decay_extent: 0.1
+save_interval: 1000000
+print_interval: 10000
+
+autoencoder:
+  timestep_end: 300
+  timestep_len: 1
+  checkpoint_dir: ./saved_model/cylinder_recon/300_random512_bc
+  h_dim: 128
+  z_dim: 4
+  n_gnn_blocks: 15
+  n_train_steps: 600000
+  selector: NSamplesCornerRandomSelector
+  n_samples: 512
+  reverser: TINReverser
