@@ -20,7 +20,7 @@ def train(args, model, traj_data):
 	scheduler = optim.lr_scheduler.ExponentialLR(
 		optimizer, gamma=np.exp(np.log(args.lr_decay_extent) / args.lr_decay_len))
 	if args.start_step > 0:
-		ckpt = torch.load(f'{args.checkpoint_dir}/step{args.start_step}.pt')
+		ckpt = torch.load(f'{args.checkpoint_dir}/iter{args.start_step}.pt')
 		model.load_state_dict(ckpt['model'])
 		optimizer.load_state_dict(ckpt['optimizer'])
 		permutation = ckpt['permutation']
