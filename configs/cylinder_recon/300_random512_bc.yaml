@@ -15,7 +15,7 @@ n_total_steps: 600000
 n_train_steps: 600000
 lr_decay_start: 200000
 lr_decay_len: 400000
-lr_decay_extent: 0.1
+lr_decay_extent: 0.01
 save_interval: 100000
 print_interval: 2000
 
