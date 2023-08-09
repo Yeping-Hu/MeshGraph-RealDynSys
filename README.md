@@ -7,19 +7,19 @@ Authors: Yeping Hu (hu25@llnl.gov), Bo Lei(lei4@llnl.gov), Victor M. Castillo(ca
 Affiliation: Lawrence Livermore National Laboratory, Livermore, CA, USA
 
 ## Table of Contents
-- [1. Setup](#setup)
-- [2. Datasets](#datasets)
-  - [Lid-driven Cavity Flow Data](#lid-driven-cavity-flow-data)
-  - [Cylinder Flow Data](#cylinder-flow-data)
-  - [Out-of-Distribution Cylinder Flow Data](#out-of-distribution-cylinder-flow-data)
-  - [Customized Data](#customized-data)
-- [3. Training Mesh Graph Autoencoder at Mesh-reduced Space](#training-mesh-graph-autoencoder-at-mesh-reduced-space)
-  - [Lid-driven Cavity Flow](#lid-driven-cavity-flow)
-  - [Cylinder Flow](#cylinder-flow)
-- [4. Training Graph Predictor](#training-graph-predictor)
-  - [Full Graph](#full-graph)
-  - [Subgraph](#subgraph)
-- [5. Evaluation](#evaluation)
+- [1. Setup](#1.-setup)
+- [2. Datasets](#2.-datasets)
+  - [Lid-driven Cavity Flow Data](#2.1-lid-driven-cavity-flow-data)
+  - [Cylinder Flow Data](#2.2-cylinder-flow-data)
+  - [Out-of-Distribution Cylinder Flow Data](#2.3-out-of-distribution-cylinder-flow-data)
+  - [Customized Data](#2.4-customized-data)
+- [3. Training Mesh Graph Autoencoder at Mesh-reduced Space](#3.-training-mesh-graph-autoencoder-at-mesh-reduced-space)
+  - [Lid-driven Cavity Flow](#3.1-lid-driven-cavity-flow)
+  - [Cylinder Flow](#3.2-cylinder-flow)
+- [4. Training Graph Predictor](#4.-training-graph-predictor)
+  - [Full Graph](#4.1-full-graph)
+  - [Subgraph](#4.2-subgraph)
+- [5. Evaluation](#5.-evaluation)
 
 ## 1. Setup
 Set up a virtual environment and install the required packages:
