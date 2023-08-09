@@ -2,7 +2,7 @@
 
 This Git repository contains codes for the 'Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems' paper that is published in 2023 SIGKDD. The goal of this work is to reduce computational costs of learning-based simulator while preseving crucial dynamic properties. Specifically, this work uses physical-informed prior (PiP) information to learn and predict dynamic systems in a reduced mesh space. A two-stage graph-based model is proposed. In the first stage, we learn a subgraph autoencoder to summarize the information in a mesh-reduced space using physical-informed priors. In the second stage, we learn a dynamics predictor to predict subgraph evolution. We demonstrate the effectiveness of our model on two fluid flow datasets: lid-driven cavity flow data and cylinder flow data. This code is also applicable for other dynamic systems by modifying the PiP module, along with corresponding data.
 
-Authors: [Yeping Hu](https://yeping-hu.github.io/){:target="_blank"} (hu25@llnl.gov), Bo Lei(lei4@llnl.gov), Victor M. Castillo(castillo3@llnl.gov)
+Authors: <a href="https://yeping-hu.github.io/" target="_blank">Yeping Hu</a> (hu25@llnl.gov), Bo Lei(lei4@llnl.gov), Victor M. Castillo(castillo3@llnl.gov)
 
 Affiliation: Lawrence Livermore National Laboratory, Livermore, CA, USA
 
