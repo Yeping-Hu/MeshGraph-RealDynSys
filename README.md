@@ -1,10 +1,21 @@
 # Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems
 
-This Git repository contains codes for the 'Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems' paper that is published in 2023 SIGKDD. The goal of this work is to reduce computational costs of learning-based simulator while preseving crucial dynamic properties. Specifically, this work uses physical-informed prior (PiP) information to learn and predict dynamic systems in a reduced mesh space. A two-stage graph-based model is proposed. In the first stage, we learn a subgraph autoencoder to summarize the information in a mesh-reduced space using physical-informed priors. In the second stage, we learn a dynamics predictor to predict subgraph evolution. We demonstrate the effectiveness of our model on two fluid flow datasets: lid-driven cavity flow data and cylinder flow data. This code is also applicable for other dynamic systems by modifying the PiP module, along with corresponding data.
+This Git repository contains codes for the paper:[Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems](https://dl.acm.org/doi/pdf/10.1145/3580305.3599835) which is published in 2023 SIGKDD. The goal of this work is to reduce computational costs of learning-based simulator while preseving crucial dynamic properties. Specifically, this work uses physical-informed prior (PiP) information to learn and predict dynamic systems in a reduced mesh space. A two-stage graph-based model is proposed. In the first stage, we learn a subgraph autoencoder to summarize the information in a mesh-reduced space using physical-informed priors. In the second stage, we learn a dynamics predictor to predict subgraph evolution. We demonstrate the effectiveness of our model on two fluid flow datasets: lid-driven cavity flow data and cylinder flow data. This code is also applicable for other dynamic systems by modifying the PiP module, along with corresponding data.
 
 Authors: <a href="https://yeping-hu.github.io/" target="_blank">Yeping Hu</a> (hu25@llnl.gov), Bo Lei(lei4@llnl.gov), Victor M. Castillo(castillo3@llnl.gov)
 
 Affiliation: Lawrence Livermore National Laboratory, Livermore, CA, USA
+
+**If you use the code here please site this paper**:
+```
+@inproceedings{hu2023graph,
+  title={Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems},
+  author={Hu, Yeping and Lei, Bo and Castillo, Victor M},
+  booktitle={Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={4166--4174},
+  year={2023}
+}
+```
 
 ## Table of Contents
 - [1. Setup](#1-setup)
