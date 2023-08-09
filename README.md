@@ -13,10 +13,10 @@ Affiliation: Lawrence Livermore National Laboratory, Livermore, CA, USA
   - [Cylinder Flow Data](#cylinder-flow-data)
   - [Out-of-Distribution Cylinder Flow Data](#out-of-distribution-cylinder-flow-data)
   - [Customized Data](#customized-data)
-- [3. Training subgraph autoencoder](#training-subgraph-autoencoder)
+- [3. Training Mesh Graph Autoencoder at Mesh-reduced Space](#training-mesh-graph-autoencoder-at-mesh-reduced-space)
   - [Lid-driven Cavity Flow](#lid-driven-cavity-flow)
   - [Cylinder Flow](#cylinder-flow)
-- [4. Training Cylinder Flow Predictor](#training-cylinder-flow-predictor)
+- [4. Training Graph Predictor](#training-graph-predictor)
   - [Full Graph](#full-graph)
   - [Subgraph](#subgraph)
 - [5. Evaluation](#evaluation)
@@ -80,7 +80,7 @@ To load train/test datasets, please follow `load_cavity_data` and `load_cfd_traj
 
 ---
 
-## 3. Training subgraph autoencoder
+## 3. Training Mesh Graph Autoencoder
 
 In this first stage, an autoencoder is learned to summarize information in a mesh-reduced space.
 Configurations and hyperparameters are stored in `.yaml` file under the directory of `configs/cavity` and
@@ -104,7 +104,7 @@ python train_cylinder_recon.py  --config 300_hybrid512_bc.yaml --mode train
 ```
 The configuration for GMR_GMUS is `300_random512_bc.yaml`.
 
-## 4. Training Cylinder Flow Predictor
+## 4. Training Graph Predictor at Mesh-reduced Space
 In this stage, we train a dynamics predictor to predict the evolution of the flow field.
 
 ### 4.1 Full Graph
