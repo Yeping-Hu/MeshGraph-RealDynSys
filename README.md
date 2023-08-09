@@ -1,6 +1,6 @@
 # Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems
 
-This Git repository contains codes for the 'Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems' paper that will be published in 2023 SIGKDD. This work uses physical-informed prior (PiP) information to learn and predict dynamic systems in a reduced mesh space. We propose a two-stage graph-based model for fluid velocity field reconstruction and prediction. In the first stage, we learn a subgraph autoencoder to summarize the information in a mesh-reduced space using physical-informed priors. In the second stage, we learn a dynamics predictor to predict subgraph evolution. We demonstrate the effectiveness of our model on two fluid flow datasets: lid-driven cavity flow data and cylinder flow data. This code is also applicable for any other dynamic systems with corresponding data.
+This Git repository contains codes for the 'Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems' paper that is published in 2023 SIGKDD. The goal of this work is to reduce computational costs of learning-based simulator while preseving crucial dynamic properties. Specifically, this work uses physical-informed prior (PiP) information to learn and predict dynamic systems in a reduced mesh space. A two-stage graph-based model is proposed. In the first stage, we learn a subgraph autoencoder to summarize the information in a mesh-reduced space using physical-informed priors. In the second stage, we learn a dynamics predictor to predict subgraph evolution. We demonstrate the effectiveness of our model on two fluid flow datasets: lid-driven cavity flow data and cylinder flow data. This code is also applicable for other dynamic systems by modifying the PiP module, along with corresponding data.
 
 Authors: Yeping Hu (hu25@llnl.gov), Bo Lei(lei4@llnl.gov), Victor M. Castillo(castillo3@llnl.gov)
 
@@ -144,3 +144,9 @@ The test result can be generated running training python scripts with `--mode te
 velocity fields are saved accordingly. To run test on out-of-distribution cylinder flow data, add flag `--ood`
 in command. The functionalities in `core/metric.py` can be used to compute
 vortex-related metrics including VDR (vortex detection rate) and MDDV (mean distance to detected vortices).
+
+##
+LLNL-CODE-852129
+
+
+
