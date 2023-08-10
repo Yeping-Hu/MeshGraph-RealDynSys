@@ -6,7 +6,7 @@ Authors: <a href="https://yeping-hu.github.io/" target="_blank">Yeping Hu</a> (h
 
 Affiliation: Lawrence Livermore National Laboratory, Livermore, CA, USA
 
-**If you use the code here please site this paper**:
+**If you use the code here please cite this paper**:
 ```
 @inproceedings{hu2023graph,
   title={Graph Learning in Physical-informed Mesh-reduced Space for Real-world Dynamic Systems},
